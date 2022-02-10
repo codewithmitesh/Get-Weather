@@ -9,6 +9,11 @@ const hbs = require("hbs"); // initializes hbs
 // ! Refer Official Documentation of Express.js on its official Site
 const app = express(); //starting the Express APp
 
+// Creating the Port which heroku provide to host our Node js Application
+const port = process.env.PORT || 3000;
+
+
+
 // Define paths for Express config that uses our Path module which is inbuilt in Node Engine ,, HEre we are setting the locations for the files and folders using path module.
 const publicDirectoryPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
@@ -87,6 +92,6 @@ app.get("*", (req, res) => {
  * * NOTE :- We al ways need to start our server before doing anything in Express
  */
 // ! Starting the Express Server on the port of Localhost:3000
-app.listen(3000, () => {
-    console.log("Server is up on port 3000.");
+app.listen(port, () => {
+    console.log("Server is up on port port "+ port);
 });
