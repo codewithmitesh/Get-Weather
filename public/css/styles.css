@@ -1,42 +1,89 @@
-body {
-    color: #333333;
-    font-family: arial;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 0 16px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh
+body {
+  background-color: #183153;
+  color: white;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 }
 
 .main-content {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 footer {
-    color: #888888;
-    border-top: 1px solid #eeeeee;
-    margin-top: 16px;
-    padding: 16px 0;
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
 }
 
 header {
-    margin-top: 16px;
-    margin-bottom: 48px;
+  margin-top: 16px;
+  margin-bottom: 48px;
 }
 
 h1 {
-    font-size: 64px;
-    margin-bottom: 16px;
+  font-size: 64px;
+  margin-bottom: 16px;
 }
 
 header a {
-    color: #888888;
-    margin-right: 16px;
-    text-decoration: none;
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
 }
 
 .portrait {
-    width: 250px;
+  width: 250px;
+}
+
+.Social_Links {
+  color: gold;
+}
+
+div.widget {
+  position: relative;
+  width: 422px;
+  height: 162px;
+  margin: 150px auto;
+  background-color: #fcfdfd;
+  border-radius: 9px;
+  padding: 25px;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+p.city {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.temp {
+  font-size: 45px;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 100;
+  position: absolute;
+  float: right;
+  top: 0;
+  margin-top: 61px;
+  padding-left: 154px;
+}
+div.panel {
+  display: inline-block;
 }

@@ -23,12 +23,33 @@ fetch('http://localhost:3000/weather?name=vapi').then((response) => {
 // 🥵😎😎😎😎
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
-const MessageOne = document.querySelector('#Msg1')
-const MessageTwo = document.querySelector('#Msg2')
+// const MessageOne = document.querySelector('#Msg1')
+const MessageOne = document.querySelector('.city')
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+
+const currentData = new Date()
+var date = currentData.getDate();
+let month = currentData.getMonth();
+let year = currentData.getFullYear();
+let Day = currentData.getDay();
+// console.log(date)
+// console.log(monthNames[month])
+// console.log(year)
+let showDate = days[Day] + ", " + date + " " + monthNames[month] + " " + year
+const dateCs = document.querySelector('.date')
+dateCs.textContent = showDate
+
+const MessageTwo = document.querySelector('.temp')
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const location = search.value
-    MessageOne.textContent = ' ⭕ Loading...  '
+    // MessageOne.textContent = ' ⭕ Loading...  '
     MessageTwo.textContent = '  '
 
     fetch('/weather?name=' + location).then((response) => {

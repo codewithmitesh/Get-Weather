@@ -31,22 +31,22 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
     res.render("index", {
         title: "Weather",
-        name: "Mitesh Tank",
+        name: "Codewithmitesh",
     });
 });
 
 app.get("/about", (req, res) => {
     res.render("about", {
         title: "About Me",
-        name: "Mitesh Tank aka codewithmitesh",
+        name: "Codewithmitesh",
     });
 });
 
 app.get("/help", (req, res) => {
     res.render("help", {
-        helpText: "This is some helpful text.",
+        helpText: "Welcome to Get Weather App ",
         title: "Help",
-        name: "Mitesh Tank(codewithmitesh@gmail.com)",
+        name: "Codewithmitesh",
     });
 });
 
@@ -75,7 +75,7 @@ app.get("/weather", (req, res) => {
 app.get("/help/*", (req, res) => {
     res.render("404", {
         title: "404",
-        name: "Mitesh Tank",
+        name: "Codewithmitesh",
         errorMessage: "Help article not found.",
     });
 });
@@ -83,7 +83,7 @@ app.get("/help/*", (req, res) => {
 app.get("*", (req, res) => {
     res.render("404", {
         title: "404",
-        name: "Mitesh Tank",
+        name: "Codewithmitesh",
         errorMessage: "Page not found.",
     });
 });
@@ -93,5 +93,5 @@ app.get("*", (req, res) => {
  */
 // ! Starting the Express Server on the port of Localhost:3000
 app.listen(port, () => {
-    console.log("Server is up on port port "+ port);
+    console.log("Server is up on port port " + port);
 });
