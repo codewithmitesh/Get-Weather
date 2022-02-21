@@ -30,7 +30,7 @@ app.use(express.static(publicDirectoryPath));
 // * res.send() for sending the static html page or Object but res.render() to send the dynamic page of hbs
 app.get("", (req, res) => {
     res.render("index", {
-        title: "Weather",
+        title: "Get Weather",
         name: "Codewithmitesh",
     });
 });

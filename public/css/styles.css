@@ -1,7 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 
+html {
+  background: url(../img/spiders-ge12349633_1920.jpg) no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100%;
+  /* overflow: ; */
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 body {
-  background-color: #183153;
+  /* background-color: #183153; */
   color: white;
   font-family: arial;
   max-width: 650px;
@@ -58,6 +77,60 @@ div.widget {
   padding: 25px;
   padding-right: 30px;
   box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+div.glass-div {
+  position: absolute;
+  height: 6rem;
+  margin-left: 91px;
+  width: 27rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 31px 35px -26px #080c21;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+.Input-container {
+  /* background-color: aqua; */
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 13px;
+  left: 9%;
+}
+.Location_field {
+  width: 20rem;
+  height: 0.4rem;
+  background: #fff;
+  /* color: $input-text-color; */
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+  border-radius: 25px;
+}
+.btn-container {
+  width: 152px;
+  position: absolute;
+  /* height: 30px; */
+  padding-top: 55px;
+  left: 39%;
+  top: 19%;
+  /* box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1); */
+}
+.btn {
+  display: inline-block;
+  background: red;
+  height: 38px;
+  width: 96px;
+  color: white;
+  font: inherit;
+  border: 0;
+  border-radius: 20px;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
 }
 
 .date {
