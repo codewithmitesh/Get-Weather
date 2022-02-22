@@ -15,7 +15,7 @@ const forecast = (cityname, callback) => {
             } else if (response.body.error) {
                 callback("Unable to connect to location", undefined);
             } else {
-                callback(undefined, response.body.current.temperature + " °C " + response.body.current.weather_descriptions[0]  );
+                callback(undefined, response.body.current.temperature + " °C " + response.body.current.weather_descriptions[0]);
             }
         }
     );

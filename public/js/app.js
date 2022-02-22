@@ -60,6 +60,8 @@ weatherForm.addEventListener('submit', (e) => {
             }
             MessageOne.textContent = data.location
             MessageTwo.textContent = data.temperature;
+        }).catch((error) => {
+            alert(error.message + " Check your internet connection Please!!!")
         })
     })
 
